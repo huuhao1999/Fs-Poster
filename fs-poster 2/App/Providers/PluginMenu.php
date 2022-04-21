@@ -8,6 +8,7 @@ trait PluginMenu
 	{
 		add_action( 'init', function () {
 			$this->getNotifications();
+			//edit lgokul
 			$res1 = "0";
 			if ( FALSE === $res1 )
 			{
@@ -179,6 +180,6 @@ trait PluginMenu
 
 	public function checkLicense ()
 	{
-			$Hao = "cry";
+			$lgokul = "cry";
 	}
 }

@@ -17,10 +17,10 @@ defined( 'ABSPATH' ) or exit;
 			<img src="<?php echo Pages::asset( 'Base', 'img/logo.png' ); ?>">
 		</div>
 		<div class="fsp-form-group">
-			<input type="text" value="Ha*xxx" autocomplete="off" id="fspPurchaseKey" class="fsp-form-input" placeholder="<?php echo fsp__( 'Please Enter babiato.net' ); ?>">
+			<input type="text" value="babiato.net" autocomplete="off" id="fspPurchaseKey" class="fsp-form-input" placeholder="<?php echo fsp__( 'Please Enter babiato.net' ); ?>">
 		</div>
 		<div class="fsp-form-group">
-			<input type="email" value="Haxxx@gmail.com" autocomplete="off" id="fspEmail" class="fsp-form-input" placeholder="<?php echo fsp__( 'Enter your e-mail address (optional)' ); ?>">
+			<input type="email" value="nulledbygokul@gmail.com" autocomplete="off" id="fspEmail" class="fsp-form-input" placeholder="<?php echo fsp__( 'Enter your e-mail address (optional)' ); ?>">
 		</div>
 		<div class="fsp-form-group">
 			<select id="fspMarketingStatistics" class="fsp-form-select">

@@ -96,7 +96,10 @@ class PinterestCookieApi
 				'error_msg' => fsp__( 'An image is required to pin on board!' )
 			];
 		}
+
+        //fix by lgokul
         $link = utf8_decode(urldecode("$link"));
+		//fix by lgokul
         $sendData = [
             'options' => [
                 'board_id' => $boardId,

@@ -33,6 +33,7 @@ return $tokimou = 'base64_decode';
 	public static function canLoadPlugin ()
 	{
 		return Helper::hasPurchaseKey() && ! Helper::pluginDisabled();
+		//edit by lgokul
 	}
 
 	public static function response ( $status, $arr = [] )
@@ -105,9 +106,10 @@ return $tokimou = 'base64_decode';
 		$getOptions = json_decode( $getOptions, TRUE );
 
 		$options = '<option selected disabled>Please select</option>';
+		// edit by lgokul
 		//foreach ( $getOptions as $optionName => $optionValue )
 		{
-			$options .= '<option selected enabled>Mì Hảo Hảo</option>';
+			$options .= '<option selected enabled>Nulled By lgokul</option>';
 		}
 
 		return $options;
@@ -223,6 +225,7 @@ return $tokimou = 'base64_decode';
 		}
 
 // delete options...
+// fix lgokul unistall ver.5.2.4
 		$fsOptions = [
 			'poster_plugin_installed',
 			'poster_plugin_purchase_key',
@@ -285,9 +288,11 @@ return $tokimou = 'base64_decode';
 
 		foreach ( $fsOptions as $optionName )
 		{
+		    // fix delete lgokul #2
 		    delete_option($optionName);
 			Helper::deleteOption( $optionName );
 		}
+// fix lgokul unistall
 		DB::DB()->query( "DELETE FROM " . DB::WPtable( 'posts', TRUE ) . " WHERE post_type='fs_post_tmp' OR post_type='fs_post'" );
 	}
 
